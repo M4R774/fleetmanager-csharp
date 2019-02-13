@@ -6,6 +6,6 @@ namespace Eatech.FleetManager.ApplicationCore.Entities
     {
         public Guid Id { get; set; }
 
-        public int ModelYear { get; set; }
+        public int? ModelYear { get; set; }
     }
 }

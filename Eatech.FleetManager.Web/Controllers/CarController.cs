@@ -22,7 +22,7 @@ namespace Eatech.FleetManager.Web.Controllers
         ///     Example HTTP GET: api/car
         /// </summary>
         [HttpGet]
-        public async Task<IEnumerable<CarDto>> Get()
+        public async Task<IEnumerable<CarDto>> GetAll()
         {
             return (await _carService.GetAll()).Select(c => new CarDto
             {
